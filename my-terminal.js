@@ -68,7 +68,7 @@ const directories = {
           "* Saved space on storage-scarce EC2 instances by automating the process of uploading files to S3 via PowerShell",
           "* Deployed an Angular website to AWS Amplify through the CLI, making it available to internal users",
           "* Wrote, tested, and integrated AWS Lambda functions to seamlessly integrate S3 with a published website",
-          "* Improved performance of backend Lambda functions by caching stats about files in S3 metadata instead of calling costly Lambda functions",
+          "* Rearchitected the company's AWS architecture using AWS S3 and Lambda functions to improve the performance of an internal stats website by 100%",
         ],
       ],
     ].map(([company, url, timespan, descriptions]) => {
@@ -238,7 +238,19 @@ let term = $("body").terminal(commands, {
   greetings: false,
   checkArity: false,
   exit: false,
-  completion: true,
+  completion() {
+    const command = this.get_command();
+    const { name, rest } = $.terminal.parse_command(command);
+    if (['cd', 'ls'].includes(name)) {
+      if (rest.startsWith('~/')) {
+        return dirs.map(dir => `~/${dir}`);
+      }
+      if (currentDir === root) {
+        return dirs;
+      }
+    }
+    return Object.keys(commands);
+  },
   prompt,
 });
 
