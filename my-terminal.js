@@ -205,6 +205,11 @@ const commands = {
       this.echo(directories[dir].join("\n"));
     }
   },
+  whoami() {
+    term.echo(
+      `<white>===============================================</white>\n<white>Name:</white> Brandon Smith\n<white>Role:</white> Full-Stack Software Engineer\n\n<white>Bio:</white>\nThanks for checking out my Portfolio Terminal! I'm Brandon Smith, a senior at Neumont College of Computer Science. I'm very passionate about software development\nand I work hard to continually learn and improve. In high school, I was intent on going to college for musical performance because I loved playing the flute,\nbut after taking an AP Computer Science class with my favorite teacher, Mr. Bean, I knew I wanted to get into programming. I've gone from very simple Python\nprograms to full, feature-rich, cloud-deployed web applications and I'm excited to take my skills even further in industry. I specialize in full-stack development\nespecially in the MERN (MongoDB, Express.js, React.js, and Node.js) tech stack.\n\n\n<white>Click for more info:</white>\n<white >-</white> <blue class="directory">skills</blue><white> - Technical skills, frameworks, languages</white>\n<white>-</white> <blue class="directory">projects</blue><white> - Personal projects, school projects</white>\n<white >-</white> <blue class="directory">socials</blue><white> - Social media & contact links</white>\n<white>===============================================</white>`
+    );
+  },
 };
 
 function print_dirs() {
@@ -241,9 +246,9 @@ let term = $("body").terminal(commands, {
   completion() {
     const command = this.get_command();
     const { name, rest } = $.terminal.parse_command(command);
-    if (['cd', 'ls'].includes(name)) {
-      if (rest.startsWith('~/')) {
-        return dirs.map(dir => `~/${dir}`);
+    if (["cd", "ls"].includes(name)) {
+      if (rest.startsWith("~/")) {
+        return dirs.map((dir) => `~/${dir}`);
       }
       if (currentDir === root) {
         return dirs;
@@ -257,6 +262,7 @@ let term = $("body").terminal(commands, {
 term.pause();
 
 function ready() {
+  term.clear();
   const seed = rand(256);
 
   term
