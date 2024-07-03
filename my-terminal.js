@@ -61,14 +61,22 @@ const directories = {
     "<white>Industry Experience:</white>",
     [
       [
-        "Full-Stack Engineer @ AdvancedMD",
+        "Cloud Automation Engineer @ AdvancedMD",
         "https://www.advancedmd.com",
-        "Jan 2024 - Present",
+        "Jan 2024 - Jun 2024",
         [
           "* Saved space on storage-scarce EC2 instances by automating the process of uploading files to S3 via PowerShell",
           "* Deployed an Angular website to AWS Amplify through the CLI, making it available to internal users",
           "* Wrote, tested, and integrated AWS Lambda functions to seamlessly integrate S3 with a published website",
           "* Rearchitected the company's AWS architecture using AWS S3 and Lambda functions to improve the performance of an internal stats website by 400%",
+        ],
+      ],
+      [
+        "Java Software Engineer @ Alpine Data Solutions",
+        "https://alpinedatasolutions.com"
+        "Jun 2024 - Present",
+        [
+          ""
         ],
       ],
     ].map(([company, url, timespan, descriptions]) => {
@@ -107,7 +115,7 @@ const directories = {
     ),
     "",
     "<white>Database/Cloud:</white>",
-    ["MongoDB", "SQL", "MySQL", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB)"].map(
+    ["MongoDB", "SQL", "MySQL", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
       (tool) => `* <pink>${tool}</pink>`
     ),
     "",
