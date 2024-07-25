@@ -61,22 +61,23 @@ const directories = {
     "<white>Industry Experience:</white>",
     [
       [
+        "Java Software Engineer @ Alpine Data Solutions",
+        "https://alpinedatasolutions.com",
+        "Jun 2024 - Present",
+        [
+          "* Developed a build tool for HTML/JS/CSS projects, allowing developers to test Vue microfrontends, resulting in a 25% reduction in setup time for production and testing",
+          "* Implemented features for dependency order, minification, and obfuscation, allowing for efficient test builds",
+          "* Collaborated with team members to refine and enhance tool functionality, improving developer workflows and increasing overall project efficiency by 30%"
+        ],
+      ],
+      [
         "Cloud Automation Engineer @ AdvancedMD",
         "https://www.advancedmd.com",
         "Jan 2024 - Jun 2024",
         [
-          "* Saved space on storage-scarce EC2 instances by automating the process of uploading files to S3 via PowerShell",
-          "* Deployed an Angular website to AWS Amplify through the CLI, making it available to internal users",
-          "* Wrote, tested, and integrated AWS Lambda functions to seamlessly integrate S3 with a published website",
-          "* Rearchitected the company's AWS architecture using AWS S3 and Lambda functions to improve the performance of an internal stats website by 400%",
-        ],
-      ],
-      [
-        "Java Software Engineer @ Alpine Data Solutions",
-        "https://alpinedatasolutions.com"
-        "Jun 2024 - Present",
-        [
-          ""
+          "* Reduced 30GB of wasted space on storage-scarce EC2 instances by automating the process of uploading files to S3 via PowerShell",
+          "* Revamped AWS infrastructure with Lambda functions and S3, boosting internal stats website speed by 400%",
+          "* Wrote, tested, and called AWS Lambda functions to seamlessly integrate S3 with a published website"
         ],
       ],
     ].map(([company, url, timespan, descriptions]) => {
