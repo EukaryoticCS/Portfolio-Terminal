@@ -55,7 +55,7 @@ const directories = {
       [
         "SYNC",
         "https://github.com/RileySorensen/SyncBackEnd",
-        "A mobile app for indecisive Millenials/Gen Z to help them decide on a group activity based on the interests of the group",
+        "A mobile app for indecisive Millenials/Gen Z to help them decide on a group activity based on the interests of the group, all made in less than 48 hours",
       ],
     ].map(([name, url, description = ""]) => {
       const returnString =
@@ -134,7 +134,7 @@ const directories = {
     ),
     "",
     "<white>Database/Cloud:</white>",
-    ["MongoDB", "SQL", "MySQL", "Supabase", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
+    ["MongoDB", "Supabase", "SQL", "MySQL", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
       (tool) => `* <pink>${tool}</pink>`
     ),
     "",
@@ -235,7 +235,7 @@ const commands = {
   },
   whoami() {
     term.echo(
-      `<white>===============================================</white>\n<white>Name:</white> Brandon Smith\n<white>Role:</white> Full-Stack Software Engineer\n\n<white>Bio:</white>\nThanks for checking out my Portfolio Terminal! I'm Brandon Smith, a senior at Neumont College of Computer Science. I'm very passionate about software development\nand I work hard to continually learn and improve. In high school, I was intent on going to college for musical performance because I loved playing the flute,\nbut after taking an AP Computer Science class with my favorite teacher, Mr. Bean, I knew I wanted to get into programming. I've gone from very simple Python\nprograms to full, feature-rich, cloud-deployed web applications and I'm excited to take my skills even further in industry. I specialize in full-stack development\nespecially in the MERN (MongoDB, Express.js, React.js, and Node.js) tech stack.\n\n\n<white>Click for more info:</white>\n<white >-</white> <blue class="directory">skills</blue><white> - Technical skills, frameworks, languages</white>\n<white>-</white> <blue class="directory">projects</blue><white> - Personal projects, school projects</white>\n<white >-</white> <blue class="directory">socials</blue><white> - Social media & contact links</white>\n<white>===============================================</white>`
+      `<white>===============================================</white>\n<white>Name:</white> Brandon Smith\n<white>Role:</white> Full-Stack Software Engineer\n\n<white>Bio:</white>\nThanks for checking out my Portfolio Terminal! I'm Brandon Smith, a Software Engineer in Test at Cox Automotive. I'm very passionate about software development\nand I work hard to continually learn and improve. In high school, I was intent on going to college for musical performance because I loved playing the flute,\nbut after taking an AP Computer Science class with my favorite teacher, Mr. Bean, I knew I wanted to get into programming. I've gone from very simple Python\nprograms to full, feature-rich, cloud-deployed web applications and I'm excited to take my skills even further in industry. I specialize in full-stack development\nespecially in the MERN (MongoDB, Express.js, React.js, and Node.js) tech stack.\n\n\n<white>Click for more info:</white>\n<white >-</white> <blue class="directory">skills</blue><white> - Technical skills, frameworks, languages</white>\n<white>-</white> <blue class="directory">projects</blue><white> - Personal projects, school projects</white>\n<white >-</white> <blue class="directory">socials</blue><white> - Social media & contact links</white>\n<white>===============================================</white>`
     );
   },
 };
