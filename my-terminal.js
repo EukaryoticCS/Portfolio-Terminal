@@ -21,6 +21,9 @@ const directories = {
     "<white>Education & Awards</white>",
     '* <yellow><a href="https://www.neumont.edu">Neumont College of Computer Science</a></yellow>',
     "* <green>4.0 GPA</green>",
+    "* <green>Valedictorian - Cedarville High School</green>",
+    "* <green>Valedictorian - Neumont College of Computer Science",
+    "* <green>Project Showcase Overall Winner (March 2024) - QuestTrackr</green>",
     "* <green>Neumont Academic Coach -- Object Oriented Programming, Sets & Probability, Precalculus, Calculus, Linear Algebra, Statistics</green>",
     "* <green>Neumont eSports Captain -- Super Smash Bros. Ultimate",
     "",
@@ -49,6 +52,11 @@ const directories = {
         "",
         "A microserviced API that meets OpenAPI Specification used for tracking game completion",
       ],
+      [
+        "SYNC",
+        "https://github.com/RileySorensen/SyncBackEnd",
+        "A mobile app for indecisive Millenials/Gen Z to help them decide on a group activity based on the interests of the group",
+      ],
     ].map(([name, url, description = ""]) => {
       const returnString =
         url == "" ? `* <div>${name}</div>` : `* <a href="${url}">${name}</a>`;
@@ -61,13 +69,21 @@ const directories = {
     "<white>Industry Experience:</white>",
     [
       [
+        "Test Software Engineer I @ Cox Automotive",
+        "https://www.coxautoinc.com",
+        "Jun 2024 - August 2024",
+        [
+          "* Still working, check for more info soon!",
+        ],
+      ],
+      [
         "Java Software Engineer @ Alpine Data Solutions",
         "https://alpinedatasolutions.com",
-        "Jun 2024 - Present",
+        "Jun 2024 - August 2024",
         [
-          "* Developed a build tool for HTML/JS/CSS projects, allowing developers to test Vue microfrontends, resulting in a 25% reduction in setup time for production and testing",
+          "* Developed a Maven build tool for HTML/JS/CSS projects, allowing developers to test Vue microfrontends, resulting in a 25% reduction in setup time for production and testing",
           "* Implemented features for dependency order, minification, and obfuscation, allowing for efficient test builds",
-          "* Collaborated with team members to refine and enhance tool functionality, improving developer workflows and increasing overall project efficiency by 30%"
+          "* Collaborated with team members to refine and enhance tool functionality, improving developer workflows and increasing overall project efficiency by 30%",
         ],
       ],
       [
@@ -101,22 +117,24 @@ const directories = {
       "C#",
       "C++",
       "HTML",
+      "PHP",
+      "x86 Assembly",
       "PowerShell",
       "Dart",
     ].map((lang) => `* <yellow>${lang}</yellow>`),
     "",
     "<white>Frameworks/Libraries:</white>",
-    ["Node.js", "Express.js", "React/JSX", "ASP.NET"].map(
+    ["Node.js", "Express.js", "React/JSX", "Angular", "Vue.js", "ASP.NET", "Spring Boot"].map(
       (lib) => `* <green>${lib}</green>`
     ),
     "",
     "<white>Tools:</white>",
-    ["NPM", "Postman", "Trello", "Git/GitHub", "Azure DevOps"].map(
+    ["NPM", "Maven", "Postman", "Trello", "Git/GitHub", "Azure DevOps"].map(
       (tool) => `* <blue>${tool}</blue>`
     ),
     "",
     "<white>Database/Cloud:</white>",
-    ["MongoDB", "SQL", "MySQL", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
+    ["MongoDB", "SQL", "MySQL", "Supabase", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
       (tool) => `* <pink>${tool}</pink>`
     ),
     "",
