@@ -69,11 +69,21 @@ const directories = {
     "<white>Industry Experience:</white>",
     [
       [
+        "Junior Backend Engineer @ HydroJug",
+        "https://www.thehydrojug.com",
+        "December 2024 - Present",
+        [
+          "* I'm still working here, check back later for more info!",
+        ],
+      ],
+      [
         "Test Software Engineer I @ Cox Automotive",
         "https://www.coxautoinc.com",
-        "Jun 2024 - August 2024",
+        "September 2024 - November 2024",
         [
-          "* Still working, check for more info soon!",
+          "* Consolidated a test suite using parameterized testing into a single method call, reducing code redundancy by 10x",
+          "* Fixed flaky Selenium tests, improving reliability and reducing test failures by 25% in automated workflows for full dealership sales processes",
+          "* Developed a GitHub Action for automating custom vehicle sales tests, increasing testing efficiency by allowing users to run scenarios with 15+ customizable inputs",
         ],
       ],
       [
@@ -124,12 +134,12 @@ const directories = {
     ].map((lang) => `* <yellow>${lang}</yellow>`),
     "",
     "<white>Frameworks/Libraries:</white>",
-    ["Node.js", "Express.js", "React/JSX", "Angular", "Vue.js", "ASP.NET", "Spring Boot"].map(
+    ["Node.js", "Express.js", "React/JSX", "Angular", "Vue.js", "ASP.NET", "Spring Boot", "Selenium"].map(
       (lib) => `* <green>${lib}</green>`
     ),
     "",
     "<white>Tools:</white>",
-    ["NPM", "Maven", "Postman", "Trello", "Git/GitHub", "Azure DevOps"].map(
+    ["NPM", "Maven", "Postman", "Trello", "Git/GitHub", "Azure DevOps", "LambdaTest"].map(
       (tool) => `* <blue>${tool}</blue>`
     ),
     "",
