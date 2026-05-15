@@ -270,7 +270,7 @@ $.terminal.new_formatter([any_command_regex, `<white>$1</white>`]);
 
 const font = fonts[rand(fonts.length - 1)];
 
-figlet.defaults({ fontPath: "https://unpkg.com/figlet/fonts/" });
+figlet.defaults({ fontPath: "https://cdn.jsdelivr.net/npm/figlet/fonts" });
 figlet.preloadFonts([font], ready);
 
 function prompt() {
