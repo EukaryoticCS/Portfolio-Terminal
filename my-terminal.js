@@ -73,7 +73,11 @@ const directories = {
         "https://www.thehydrojug.com",
         "December 2024 - Present",
         [
-          "* I'm still working here, check back later for more info!",
+          "* Sole engineer owning integrations across 13+ sales channels in a Firebase Cloud Functions codebase of 200+ functions; shipped 120 PRs / 1100+ commits in 17 months",
+          "* Architected bidirectional ERP integrations: real-time inventory and bin endpoints, event-driven record sync replacing legacy polling, and a unified webhook schema consolidating ingestion across all channels",
+          "* Cross-functional partner across Supply Chain, E-Commerce, Warehouse, CS, and Finance - shipped presale automation, Mystery Grab Bag system, channel-onboarding workflows, and NetSuite financial reporting",
+          "* Cut BFCM order processing latency from 3 weeks to under 2 hours through pagination, parallelization, and retry-with-backoff hardening across Shopify, Amazon, and TikTok scheduled jobs - zero major outages",
+          "* Primary code reviewer for another developer and PR-queue manager across channel integration and EDI work",
         ],
       ],
       [
@@ -134,7 +138,7 @@ const directories = {
     ].map((lang) => `* <yellow>${lang}</yellow>`),
     "",
     "<white>Frameworks/Libraries:</white>",
-    ["Node.js", "Express.js", "React/JSX", "Angular", "Vue.js", "ASP.NET", "Spring Boot", "Selenium"].map(
+    ["Node.js", "Express.js", "React/JSX", "Firebase Cloud Functions", "Angular", "Vue.js", "ASP.NET", "Spring Boot", "Selenium"].map(
       (lib) => `* <green>${lib}</green>`
     ),
     "",
@@ -144,7 +148,7 @@ const directories = {
     ),
     "",
     "<white>Database/Cloud:</white>",
-    ["MongoDB", "Supabase", "SQL", "MySQL", "SQLite", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
+    ["MongoDB", "Firestore", "SQL", "MySQL", "BigQuery", "GraphQL", "NetSuite (SuiteQL, SuiteScript, RESTlets)", "SQLite", "Supabase", "AWS (S3, Amplify, Lambda, EC2, DynamoDB, Elastic Beanstalk)"].map(
       (tool) => `* <pink>${tool}</pink>`
     ),
     "",
@@ -155,7 +159,7 @@ const directories = {
     [
       ["GitHub", "https://github.com/EukaryoticCS"],
       ["LinkedIn", "https://www.linkedin.com/in/eukaryoticcs/"],
-      ["Personal Email", "bssmith2021@gmail.com"],
+      ["Personal Email", "cs.brandon.smith@gmail.com"],
       ["Phone Number", "(479) 883-5205"],
     ].map(([soc, url]) => {
       return `* <a href="${url}">${soc}</a>`;
